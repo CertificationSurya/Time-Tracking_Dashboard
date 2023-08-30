@@ -1,0 +1,47 @@
+// # Primary
+$blue: hsl(246, 80%, 60%);
+$work-red: hsl(15, 100%, 70%);
+$play-blue: hsl(195, 74%, 62%);
+$study-red: hsl(348, 100%, 68%);
+$exercise-green: hsl(145, 58%, 55%);
+$social-violet: hsl(264, 64%, 52%);
+$care-orange: hsl(43, 84%, 65%);
+
+// # Neutral
+
+$blue-10: hsl(226, 43%, 10%);
+$blue-20: hsl(235, 46%, 20%);
+$blue-60: hsl(235, 45%, 61%);
+$blue-80: hsl(236, 100%, 87%);
+
+// font-size
+$fs-md: 1.125rem;
+$fs-lg: 1.75rem;
+$fs-xl: 2.25rem;
+
+// base values
+$base-padding: 16px;
+$base-margin: 16px;
+$base-border-radius: 12px;
+
+
+$all-colors: (
+  "blue" : hsl(246, 80%, 60%),
+  "work": hsl(15, 100%, 70%),
+  "play": hsl(195, 74%, 62%),
+  "study": hsl(348, 100%, 68%),
+  "exercise": hsl(145, 58%, 55%),
+  "social": hsl(264, 64%, 52%),
+  "care": hsl(43, 84%, 65%),
+  // # Neutral
+  "blue-10": hsl(226, 43%, 10%),
+  "blue-20": hsl(235, 46%, 20%),
+  "blue-60": hsl(235, 45%, 61%),
+  "blue-80": hsl(236, 100%, 87%),
+);
+
+$font-weights : (
+    "fw-lgt": 300,
+    "fw-reg": 400,
+    "fw-md": 500
+)

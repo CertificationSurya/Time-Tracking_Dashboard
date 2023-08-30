@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+@import "./variables";
+
+:root {
+  font-family: "Rubik", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inactive {
+  color: $blue-60;
+}
+
+li {
+  cursor: pointer;
+}
+
+.flex-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+
+// styles
+
+body {
+  background-color: $blue-10;
+  color: $blue-80;
+}
+
+
+.container {
+  display: grid;
+  min-height: 100vh;
+
+  max-width: 1200px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: min(250px, 100%) 1fr;
+  gap: 1rem;
+}
+
+  .container_main {
+    height: 27.25em;
+    overflow: hidden;
+  }
+
+
+.container_main {
+  .top-card {
+    height: 70%;
+  }
+
+  .bottom-card {
+    height: 30%;
+  }
+}
+
+.jeremy-photo {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.card-wrapper{
+    height: 100%;
+//     align-items: center;
+}
+
+.events-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card-container{
+  height: 13rem;
+  width: min(260px, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+
+.icon-container{
+  position: relative;
+  overflow: hidden;
+  height: 25%;;
+  z-index: 100;
+}
+
+.icon{
+  position: absolute;
+  width: 3.5rem;
+  right: 10px;
+  top: -2px;
+  
+}
+
+.card-content{
+  height: 90%;
+  overflow: none;
+}
+
+
+.ellipses{
+  width: 14px;
+  height: 8px;
+}
+
+.content-bottom{
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 700px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    
+    &_main{
+      height: 11rem;
+      width: 100%;
+    }
+
+    &_details{
+      width: 100%;
+    }
+  }
+
+  ul{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .card-wrapper{
+    justify-content: center;
+    column-gap: 2rem;
+  }
+  .events-wrapper{
+    padding: 0;
+  }
+  .card-container{
+    // flex-grow: 1;
+    height: 10rem;
+  }
+  .icon-container{
+    height: 3rem;
+  }
+  
+  .content-bottom{
+    flex-direction: row;
+  }
+}
+
